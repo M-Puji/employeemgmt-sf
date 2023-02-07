@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-m-around_medium">
+            <lightning-icon icon-name="utility:user" size="small"></lightning-icon> <b>Subscriber Component</b>
+            <h1>publisher message recieved:{receivedMessage}</h1><br>
+            <lightning-button class="slds-var-m-around_medium" variant="brand" label="Subscribe" onclick={subscribe}></lightning-button>
+            <lightning-button class="slds-var-m-around_medium" variant="brand" label="UnSubscribe" onclick={unsubscribe}></lightning-button>
+            <lightning-button class="slds-var-m-around_medium" variant="brand" label="Clear Message" onclick={clearmsg}></lightning-button><br><br>
+            <!--lightning-formatted-text value={receivedMessage}></lightning-formatted-text-->
+
+        </div>
+    </lightning-card>
+    
+</template>

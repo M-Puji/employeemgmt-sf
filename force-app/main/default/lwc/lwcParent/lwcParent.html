@@ -1,0 +1,35 @@
+<template>
+    
+    
+    <div class="row">
+
+        <div class="column" style="float: left; width: 70%; padding: 10px;">
+            <div class="slds-box">
+                <template if:true={accountList.data}>
+                    <c-lwc-child account-list={accountList.data} onaccountselection={onAccountSelection}></c-lwc-child>
+                </template>
+            </div>
+        </div>
+
+        <div class="column" style="float: right; width: 30%; padding: 10px;">
+                <div class="slds-box">
+                    <div slot="actions">
+                       <lightning-card>
+                        <div class="slds-box">
+                             Account Case Information
+                        </div>
+                        </lightning-card>
+                    </div>
+                    
+                    <lightning-record-view-form record-id={selectedAccountId} object-api-name="Account">
+                        <div class="slds-var-m-around_medium">
+                            <lightning-card>
+                            <lightning-output-field field-name="all_cases__c"></lightning-output-field>
+                        </lightning-card>
+                        </div>
+                    </lightning-record-view-form>
+                </div>
+            </div>
+    </div>
+
+</template>

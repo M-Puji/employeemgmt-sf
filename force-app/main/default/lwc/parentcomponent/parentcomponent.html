@@ -1,0 +1,8 @@
+<template>
+    <lightning-card>
+    <lightning-tile label='Parent  Component'>
+        <lightning-textarea name="parent"  value={textVal} label="Parent text" ></lightning-textarea>
+    </lightning-tile>
+    <c-child-component oncallpasstoparent={passTochild}></c-child-component>
+</lightning-card>
+</template>

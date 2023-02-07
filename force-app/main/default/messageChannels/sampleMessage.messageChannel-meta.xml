@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>LWC Example</masterLabel>
+    <isExposed>true</isExposed>
+    <description>LMC send info from one component to another component</description>
+    <lightningMessageFields>
+        <fieldName>messageToSend</fieldName>
+        <description>sending message</description>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <fieldName>sourceSystem</fieldName>
+        <description>My source?</description>
+    </lightningMessageFields>
+
+</LightningMessageChannel>
+  

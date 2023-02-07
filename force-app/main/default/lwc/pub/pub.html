@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-m-around_medium">
+            <h1><strong>Communication between Two components using LMS</strong></h1>
+            <lightning-icon icon-name="utility:user" size="small"></lightning-icon> <b>Publisher Component</b>
+            <lightning-input type="text" label="Enter some text" value={myMessage} onchange={handleChange}></lightning-input><br>
+            <lightning-button variant="brand" label="Publish" onclick={publishMC}></lightning-button>
+        </div>
+    </lightning-card>
+    
+</template>
